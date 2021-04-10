@@ -1,0 +1,33 @@
+.contact-edit {
+    display: flex;
+    flex-direction: column;
+}
+
+#email, #name, #phone{
+    border-radius: 7px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    outline: none;
+}
+
+label{
+    padding: 20px;
+}
+
+.input-container{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.save-edit-btn-container{
+    display: flex;
+    justify-content: flex-end;
+    margin-inline-end: 20px;
+}
+
+.img-edit{
+    width: 135px;
+    height: 135px;
+}

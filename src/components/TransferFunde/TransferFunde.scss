@@ -1,0 +1,45 @@
+.transfer-form {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: rgb(84, 179, 235);
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.transfer-btn{
+    margin: auto;
+    border: none;;
+    background-color: rgb(118, 192, 192);
+    border-radius: 7px;
+    padding: 6px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    align-self: flex-start;
+    margin-inline-start: 10px;
+}
+
+#amount{
+    width: 120px;
+    border: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    height: 40px;
+    background-color: inherit;
+    display: flex;
+    outline: none;
+}
+
+.inner-form{
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.labal-amount{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
