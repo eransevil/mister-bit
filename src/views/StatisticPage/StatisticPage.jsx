@@ -11,7 +11,8 @@ export class StatisticPage extends Component {
     state = {
         marketPrices: null,
         ConfirmedTransactions: null,
-        months: null
+        months: null,
+        dateArr:null
     }
 
     componentDidMount() {
@@ -24,7 +25,11 @@ export class StatisticPage extends Component {
         const priceArr = marketPrices.map((price) => {
             return price.y
         })
+        const dateArr = marketPrices.map((price) => {
+            return price.x
+        })
         this.setState({ marketPrices: priceArr })
+        this.setState({ dateArr })
     }
     getmonths() {
         var today = new Date();
@@ -35,14 +40,14 @@ export class StatisticPage extends Component {
     }
 
     render() {
-        const { marketPrices, months } = this.state
+        const { marketPrices, months, dateArr } = this.state
         return (
             <div>
                 <h1>Market Prices</h1>
                 {
-                    marketPrices && <Sparklines data={marketPrices} height={30}>
+                    marketPrices && <Sparklines  data={marketPrices} height={30} >
                         <SparklinesLine />
-                        <SparklinesSpots />
+                        <SparklinesSpots  />
                     </Sparklines>
 
                 }
